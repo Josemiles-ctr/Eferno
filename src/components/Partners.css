@@ -49,13 +49,6 @@
   margin-bottom: 4rem;
 }
 
-/* Make the last partner card (7th) span full width */
-.partner-category:nth-child(7) {
-  grid-column: 1 / -1;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
 .partner-category {
   background: var(--bg-secondary, #f5f7fa);
   padding: 2rem;
@@ -63,6 +56,11 @@
   box-shadow: var(--shadow-md, 0 10px 40px rgba(0, 0, 0, 0.3));
   transition: all 0.3s ease;
   border: 1px solid rgba(0, 102, 204, 0.1);
+}
+
+/* Make the last partner card (7th - Research & Innovation) span full width */
+.partner-category:nth-child(7) {
+  grid-column: 1 / -1;
 }
 
 @media (prefers-color-scheme: dark) {
