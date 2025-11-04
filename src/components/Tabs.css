@@ -1,0 +1,120 @@
+.tabs-container {
+  position: sticky;
+  top: 70px;
+  z-index: 100;
+  background: rgba(15, 15, 30, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 1rem 0;
+  box-shadow: var(--shadow-sm, 0 4px 20px rgba(0, 0, 0, 0.3));
+}
+
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) .tabs-container {
+    background: rgba(255, 255, 255, 0.95);
+  }
+}
+
+:root[data-theme="light"] .tabs-container {
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  flex-wrap: wrap;
+}
+
+.tab {
+  background: transparent;
+  border: 2px solid rgba(102, 126, 234, 0.3);
+  color: var(--text-secondary, #b0b0b0);
+  padding: 0.75rem 1.5rem;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  white-space: nowrap;
+}
+
+.tab:hover {
+  background: rgba(102, 126, 234, 0.1);
+  border-color: rgba(102, 126, 234, 0.6);
+  color: var(--text-primary, #e0e0e0);
+  transform: translateY(-2px);
+}
+
+.tab--active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-color: transparent;
+  color: white;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.tab--active:hover {
+  transform: translateY(-2px);
+}
+
+.tab-icon {
+  font-size: 1.25rem;
+  display: inline-flex;
+  align-items: center;
+}
+
+.tab-label {
+  display: inline-block;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .tabs-container {
+    top: 60px;
+    padding: 0.75rem 0;
+  }
+
+  .tabs {
+    gap: 0.5rem;
+    padding: 0 1rem;
+    overflow-x: auto;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .tabs::-webkit-scrollbar {
+    display: none;
+  }
+
+  .tab {
+    padding: 0.625rem 1rem;
+    font-size: 0.9rem;
+    flex-shrink: 0;
+  }
+
+  .tab-icon {
+    font-size: 1.125rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .tab {
+    padding: 0.5rem 0.875rem;
+    font-size: 0.85rem;
+  }
+
+  .tab-label {
+    display: none;
+  }
+
+  .tab-icon {
+    font-size: 1.25rem;
+  }
+}
