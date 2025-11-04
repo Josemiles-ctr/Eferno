@@ -7,6 +7,8 @@ import Hero from './components/Hero';
 import AIFeatures from './components/AIFeatures';
 import Services from './components/Services';
 import Team from './components/Team';
+import Partners from './components/Partners';
+import Footer from './components/Footer';
 
 function App() {
   const [activeTab, setActiveTab] = useState('home');
@@ -15,7 +17,8 @@ function App() {
     { id: 'home', label: 'Home', icon: 'home' },
     { id: 'features', label: 'AI Features', icon: 'psychology' },
     { id: 'services', label: 'Services', icon: 'electric_bolt' },
-    { id: 'team', label: 'Our Team', icon: 'groups' }
+    { id: 'team', label: 'Our Team', icon: 'groups' },
+    { id: 'partners', label: 'Partners', icon: 'handshake' }
   ];
 
   const scrollToSection = (sectionId) => {
@@ -56,53 +59,13 @@ function App() {
           <section id="team">
             <Team />
           </section>
+          
+          <section id="partners">
+            <Partners />
+          </section>
         </main>
 
-        <footer className="footer">
-          <div className="footer-content">
-            <div className="footer-brand">
-              <h3 className="footer-logo">
-                <span className="material-icons" style={{ fontSize: '2rem', verticalAlign: 'middle', marginRight: '0.5rem' }}>
-                  local_fire_department
-                </span>
-                Eferno
-              </h3>
-              <p className="footer-tagline">AI-Powered Shopping Experience</p>
-            </div>
-            
-            <div className="footer-links">
-              <div className="footer-section">
-                <h4>Product</h4>
-                <a href="#features">Features</a>
-                <a href="#services">Services</a>
-                <a href="#team">Team</a>
-              </div>
-              
-              <div className="footer-section">
-                <h4>Company</h4>
-                <a href="#about">About Us</a>
-                <a href="#contact">Contact</a>
-                <a href="#careers">Careers</a>
-              </div>
-              
-              <div className="footer-section">
-                <h4>Legal</h4>
-                <a href="#privacy">Privacy Policy</a>
-                <a href="#terms">Terms of Service</a>
-              </div>
-            </div>
-          </div>
-          
-          <div className="footer-bottom">
-            <p>&copy; {new Date().getFullYear()} Eferno. All rights reserved.</p>
-            <p className="footer-team">
-              <span className="material-icons" style={{ fontSize: '1rem', verticalAlign: 'middle', marginRight: '0.25rem' }}>
-                favorite
-              </span>
-              Built with passion by the Eferno Team
-            </p>
-          </div>
-        </footer>
+        <Footer />
       </div>
     </div>
   );

@@ -1,0 +1,231 @@
+.partners {
+  padding: 6rem 1.5rem;
+  background: transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) .partners {
+    background: transparent;
+  }
+}
+
+:root[data-theme="light"] .partners {
+  background: transparent;
+}
+
+.partners-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.partners-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 1rem;
+}
+
+.section-description {
+  font-size: 1.25rem;
+  color: var(--text-secondary, #b0b0b0);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.partner-category {
+  background: var(--bg-secondary, #1a1a2e);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: var(--shadow-md, 0 10px 40px rgba(0, 0, 0, 0.3));
+  transition: all 0.3s ease;
+  border: 1px solid rgba(102, 126, 234, 0.1);
+}
+
+.partner-category:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg, 0 20px 60px rgba(102, 126, 234, 0.2));
+  border-color: rgba(102, 126, 234, 0.3);
+}
+
+.category-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.category-icon {
+  font-size: 2rem;
+  color: #667eea;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.category-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary, #e0e0e0);
+  margin: 0;
+}
+
+.category-description {
+  color: var(--text-secondary, #b0b0b0);
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.partners-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.partner-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  background: rgba(102, 126, 234, 0.05);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(102, 126, 234, 0.1);
+}
+
+.partner-item:hover {
+  background: rgba(102, 126, 234, 0.1);
+  border-color: rgba(102, 126, 234, 0.3);
+  transform: translateX(5px);
+}
+
+.partner-logo {
+  font-size: 1.5rem;
+  color: #667eea;
+}
+
+.partner-name {
+  color: var(--text-primary, #e0e0e0);
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.partnership-info {
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+  padding: 3rem;
+  border-radius: 24px;
+  border: 1px solid rgba(102, 126, 234, 0.2);
+}
+
+.info-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--text-primary, #e0e0e0);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.info-item {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.info-item .material-icons {
+  font-size: 2.5rem;
+  color: #667eea;
+  flex-shrink: 0;
+}
+
+.info-item strong {
+  display: block;
+  color: var(--text-primary, #e0e0e0);
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.info-item p {
+  color: var(--text-secondary, #b0b0b0);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Mobile Styles */
+@media (max-width: 968px) {
+  .partners {
+    padding: 4rem 1rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .section-description {
+    font-size: 1rem;
+  }
+
+  .partners-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .partnership-info {
+    padding: 2rem 1.5rem;
+  }
+
+  .info-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .partners {
+    padding: 3rem 0.5rem;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+  }
+
+  .partner-category {
+    padding: 1.5rem;
+  }
+
+  .category-title {
+    font-size: 1.25rem;
+  }
+
+  .partnership-info {
+    padding: 1.5rem 1rem;
+  }
+
+  .info-title {
+    font-size: 1.5rem;
+  }
+}

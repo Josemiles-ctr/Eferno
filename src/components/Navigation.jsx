@@ -69,6 +69,7 @@ const Navigation = ({ onNavigate }) => {
             <a href="#features" onClick={() => handleNavClick('features')}>AI Features</a>
             <a href="#services" onClick={() => handleNavClick('services')}>Services</a>
             <a href="#team" onClick={() => handleNavClick('team')}>Team</a>
+            <a href="#partners" onClick={() => handleNavClick('partners')}>Partners</a>
           </div>
 
           <button 

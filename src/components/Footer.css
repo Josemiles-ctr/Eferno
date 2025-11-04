@@ -1,0 +1,279 @@
+.footer {
+  background: var(--bg-secondary, #1a1a2e);
+  padding: 4rem 1.5rem 2rem;
+  margin-top: 6rem;
+  border-top: 1px solid rgba(102, 126, 234, 0.2);
+  position: relative;
+  z-index: 2;
+}
+
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) .footer {
+    background: var(--bg-secondary, #f5f5f5);
+  }
+}
+
+:root[data-theme="light"] .footer {
+  background: var(--bg-secondary, #f5f5f5);
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+/* App Download Section */
+.footer-section.app-download {
+  grid-column: span 1;
+}
+
+.footer-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary, #e0e0e0);
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.footer-description {
+  color: var(--text-secondary, #b0b0b0);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.download-badges {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.badge-link {
+  display: inline-flex;
+  align-items: center;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.badge-link:hover {
+  transform: translateY(-3px);
+  opacity: 0.9;
+}
+
+.store-badge {
+  height: auto;
+  max-height: 60px;
+  width: auto;
+  display: block;
+}
+
+/* QR Codes Section */
+.footer-section.qr-codes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.qr-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary, #e0e0e0);
+  margin-bottom: 1rem;
+}
+
+.qr-container {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.qr-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.qr-code {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  background: white;
+  padding: 0.5rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.qr-code:hover {
+  transform: scale(1.05);
+}
+
+.qr-label {
+  font-size: 0.875rem;
+  color: var(--text-secondary, #b0b0b0);
+  font-weight: 500;
+}
+
+/* Company Info */
+.footer-section.company-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #667eea;
+  margin-bottom: 0.5rem;
+}
+
+.footer-brand .material-icons {
+  font-size: 2rem;
+}
+
+.company-tagline {
+  color: var(--text-secondary, #b0b0b0);
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.footer-links a {
+  color: var(--text-secondary, #b0b0b0);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #667eea;
+}
+
+/* Bottom Bar */
+.footer-bottom {
+  border-top: 1px solid rgba(102, 126, 234, 0.1);
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.copyright,
+.built-by {
+  color: var(--text-secondary, #888);
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 968px) {
+  .footer-content {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+
+  .footer-section.app-download {
+    grid-column: span 2;
+  }
+
+  .footer-section.qr-codes {
+    grid-column: span 1;
+  }
+
+  .footer-section.company-info {
+    grid-column: span 1;
+  }
+}
+
+@media (max-width: 640px) {
+  .footer {
+    padding: 3rem 1rem 1.5rem;
+    margin-top: 4rem;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .footer-section.app-download,
+  .footer-section.qr-codes,
+  .footer-section.company-info {
+    grid-column: span 1;
+    align-items: center;
+    text-align: center;
+  }
+
+  .qr-container {
+    justify-content: center;
+  }
+
+  .download-badges {
+    justify-content: center;
+  }
+
+  .footer-links {
+    align-items: center;
+  }
+
+  .store-badge {
+    height: 40px;
+  }
+
+  .qr-code {
+    width: 80px;
+    height: 80px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+  }
+
+  .footer-title {
+    font-size: 1.25rem;
+  }
+
+  .qr-title {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .qr-code {
+    width: 70px;
+    height: 70px;
+  }
+
+  .qr-container {
+    gap: 1rem;
+  }
+
+  .store-badge {
+    height: 36px;
+  }
+}

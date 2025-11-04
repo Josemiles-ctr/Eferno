@@ -12,6 +12,7 @@ Eferno is a modern, AI-powered ecommerce platform landing page built with React 
 - 🎯 **Interactive Carousel**: Showcase AI features with auto-rotating carousel
 - 🎭 **Material Icons**: Professional iconography throughout
 - 🔤 **Google Fonts**: Roboto typography for modern aesthetics
+- 📲 **Mobile App Downloads**: App Store and Google Play badges with QR codes
 
 ## 🚀 Tech Stack
 
@@ -86,12 +87,39 @@ Edit CSS variables in `src/index.css`:
 - **AI Features**: Modify features array in `src/components/AIFeatures.jsx`
 - **Services**: Update services in `src/components/Services.jsx`
 - **Team Members**: Change team data in `src/components/Team.jsx`
+- **Mobile App Links**: Update app store URLs in `src/components/Footer.jsx`
+
+### Mobile App Download Links
+
+To connect real app store links and QR codes:
+
+1. **Update Badge Links** in `src/components/Footer.jsx`:
+   ```jsx
+   // Replace placeholder hrefs with your actual app store URLs
+   href="https://apps.apple.com/app/your-app-id"
+   href="https://play.google.com/store/apps/details?id=your.package.name"
+   ```
+
+2. **Generate Production QR Codes**:
+   - Use [QR Code Generator](https://www.qr-code-generator.com/) or similar
+   - Generate QR codes pointing to your app store URLs
+   - Save as SVG files and replace in `public/` folder:
+     - `qr-app-store.svg` (iOS app link)
+     - `qr-google-play.svg` (Android app link)
+
+3. **Optional: Use Official Badges**:
+   - Download official badges from [Apple](https://developer.apple.com/app-store/marketing/guidelines/) and [Google](https://play.google.com/intl/en_us/badges/)
+   - Replace `app-store-badge.svg` and `google-play-badge.svg` in `public/` folder
 
 ## 📁 Project Structure
 
 ```
 Eferno/
 ├── public/              # Static assets
+│   ├── app-store-badge.svg      # App Store download badge
+│   ├── google-play-badge.svg    # Google Play download badge
+│   ├── qr-app-store.svg         # QR code for iOS app
+│   └── qr-google-play.svg       # QR code for Android app
 ├── src/
 │   ├── components/      # React components
 │   │   ├── Navigation.jsx/css
@@ -101,6 +129,7 @@ Eferno/
 │   │   ├── Team.jsx/css
 │   │   ├── Tabs.jsx/css
 │   │   ├── Button.jsx/css
+│   │   ├── Footer.jsx/css       # Footer with app download section
 │   │   └── NeuralBackground.jsx/css
 │   ├── App.jsx          # Main app component
 │   ├── App.css          # App styles
@@ -134,6 +163,7 @@ Eferno/
 - **Button**: Customizable button with variants (primary, secondary, outline, ghost)
 - **Navigation**: Fixed navbar with theme toggle and mobile menu
 - **Tabs**: Sticky tab navigation for sections
+- **Footer**: App download section with QR codes, badges, and company info
 - **NeuralBackground**: Canvas-based neural network animation
 
 ### Section Components
