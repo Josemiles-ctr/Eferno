@@ -44,9 +44,16 @@
 
 .partners-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   margin-bottom: 4rem;
+}
+
+/* Make the last partner card (7th) span full width */
+.partner-category:nth-child(7) {
+  grid-column: 1 / -1;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .partner-category {
@@ -240,6 +247,12 @@
   .partners-grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
+  }
+
+  /* Reset full-width span on mobile */
+  .partner-category:nth-child(7) {
+    grid-column: 1;
+    max-width: 100%;
   }
 
   .partnership-info {

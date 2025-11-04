@@ -16,14 +16,13 @@
 .team-container {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0;
 }
 
 .team-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
 }
 
 /* Mukisa - Founder, centered in first row */
@@ -190,14 +189,29 @@
     padding: 4rem 1.5rem;
   }
 
+  .team-container {
+    padding: 0;
+    max-width: 100%;
+  }
+
   .team-grid {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
 
+  /* Reset all desktop positioning on mobile */
+  .team-card:nth-child(1),
+  .team-card:nth-child(2),
+  .team-card:nth-child(3),
+  .team-card:nth-child(4),
+  .team-card:nth-child(5) {
+    grid-column: 1;
+  }
+
   .team-card {
     padding: 2rem 1.5rem;
-    grid-column: auto;
+    width: 100%;
+    max-width: 100%;
   }
 
   .avatar-img {
@@ -211,6 +225,11 @@
 
   .team-role {
     font-size: 1rem;
+  }
+
+  .team-badge {
+    font-size: 0.7rem;
+    padding: 0.3rem 0.8rem;
   }
 }
 

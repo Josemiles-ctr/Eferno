@@ -6,6 +6,8 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 body {
@@ -13,27 +15,39 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
 }
 
 .app {
   position: relative;
   min-height: 100vh;
   isolation: isolate;
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
 }
 
 .app-content {
   position: relative;
   z-index: 2;
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
 }
 
 main {
   position: relative;
   z-index: 2;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 section {
   position: relative;
   z-index: 2;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 /* Section Headers */
