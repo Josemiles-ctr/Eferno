@@ -3,6 +3,7 @@ import aitaImg from '../assets/Team/aita.jpg';
 import otaiImg from '../assets/Team/otaijoseph.jpg';
 import namugerwaaImg from '../assets/Team/namugerwa.jpg';
 import mukisaImg from '../assets/Team/mukisa.jpg';
+import wamaniImg from '../assets/Team/wamani.jpg';
 
 const Team = () => {
   const teamMembers = [
@@ -33,7 +34,7 @@ const Team = () => {
       role: 'Data and Insight Lead',
       icon: 'analytics',
       degree: 'BSc. Software Engineering',
-      avatar: 'https://api.dicebear.com/7.x/micah/svg?seed=WamaniJoshua&backgroundColor=0066cc&baseColor=d08b5b'
+      avatar: wamaniImg
     },
     {
       name: 'Namugerwa Precious',
