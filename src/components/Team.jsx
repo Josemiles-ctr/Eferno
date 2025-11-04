@@ -14,7 +14,7 @@ const Team = () => {
       avatar: mukisaImg
     },
     {
-      name: 'Aita Joshua',
+      name: 'Aita Joshua Prince',
       role: 'Technology & System Architecture Lead',
       icon: 'architecture',
       degree: 'BSc. Software Engineering',
