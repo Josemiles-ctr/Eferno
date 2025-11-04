@@ -65,11 +65,26 @@ const Navigation = ({ onNavigate }) => {
 
         <div className="nav-right">
           <div className={`nav-links ${mobileMenuOpen ? 'active' : ''}`}>
-            <a href="#home" onClick={() => handleNavClick('home')}>Home</a>
-            <a href="#features" onClick={() => handleNavClick('features')}>AI Features</a>
-            <a href="#services" onClick={() => handleNavClick('services')}>Services</a>
-            <a href="#team" onClick={() => handleNavClick('team')}>Team</a>
-            <a href="#partners" onClick={() => handleNavClick('partners')}>Partners</a>
+            <a href="#home" onClick={() => handleNavClick('home')}>
+              <span className="material-icons">home</span>
+              <span>Home</span>
+            </a>
+            <a href="#features" onClick={() => handleNavClick('features')}>
+              <span className="material-icons">psychology</span>
+              <span>AI Features</span>
+            </a>
+            <a href="#services" onClick={() => handleNavClick('services')}>
+              <span className="material-icons">electric_bolt</span>
+              <span>Services</span>
+            </a>
+            <a href="#team" onClick={() => handleNavClick('team')}>
+              <span className="material-icons">groups</span>
+              <span>Team</span>
+            </a>
+            <a href="#partners" onClick={() => handleNavClick('partners')}>
+              <span className="material-icons">handshake</span>
+              <span>Partners</span>
+            </a>
           </div>
 
           <button 

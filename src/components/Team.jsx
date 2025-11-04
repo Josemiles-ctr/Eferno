@@ -9,6 +9,7 @@ const Team = () => {
     {
       name: 'Mukisa Ben Ezra',
       role: 'Product Strategist',
+      badge: 'Founder',
       icon: 'lightbulb',
       degree: 'BSc. Software Engineering',
       avatar: mukisaImg
@@ -55,13 +56,16 @@ const Team = () => {
         
         <div className="team-grid">
           {teamMembers.map((member, index) => (
-            <div key={index} className="team-card">
+            <div key={index} className={`team-card ${index === 0 ? 'team-card--founder' : ''} ${index === 4 ? 'team-card--last' : ''}`}>
               <div className="team-image">
                 <img 
                   src={member.avatar} 
                   alt={member.name}
                   className={`avatar-img ${member.name === 'Namugerwa Precious' ? 'avatar-namugerwa' : ''}`}
                 />
+                {member.badge && (
+                  <div className="team-badge">{member.badge}</div>
+                )}
               </div>
               <div className="team-info">
                 <h3 className="team-name">{member.name}</h3>
