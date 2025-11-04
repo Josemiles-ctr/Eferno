@@ -14,8 +14,8 @@ const NeuralBackground = () => {
 
     // Detect theme
     const isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const particleColor = isDarkMode ? 'rgba(102, 126, 234, 0.6)' : 'rgba(102, 126, 234, 0.4)';
-    const lineColor = isDarkMode ? 'rgba(102, 126, 234,' : 'rgba(102, 126, 234,';
+    const particleColor = isDarkMode ? 'rgba(0, 102, 204, 0.6)' : 'rgba(0, 102, 204, 0.4)';
+    const lineColor = isDarkMode ? 'rgba(0, 102, 204,' : 'rgba(0, 102, 204,';
 
     // Set canvas size
     const setCanvasSize = () => {

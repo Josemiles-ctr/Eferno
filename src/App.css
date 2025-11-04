@@ -46,7 +46,7 @@ section {
   font-size: 2.75rem;
   font-weight: 800;
   margin-bottom: 1rem;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #0066cc 0%, #00a3e0 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -62,7 +62,7 @@ section {
 
 /* Footer */
 .footer {
-  background: linear-gradient(135deg, #0f0f1e 0%, #1a1a2e 100%);
+  background: linear-gradient(135deg, #0a0e27 0%, #131b2e 100%);
   color: var(--text-primary, #e0e0e0);
   padding: 4rem 2rem 2rem;
   position: relative;
@@ -71,13 +71,13 @@ section {
 
 @media (prefers-color-scheme: light) {
   :root:not([data-theme="dark"]) .footer {
-    background: linear-gradient(135deg, #1a1a2e 0%, #2a2a3e 100%);
+    background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
     color: #e0e0e0;
   }
 }
 
 :root[data-theme="light"] .footer {
-  background: linear-gradient(135deg, #1a1a2e 0%, #2a2a3e 100%);
+  background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
   color: #e0e0e0;
 }
 
@@ -97,7 +97,7 @@ section {
 .footer-logo {
   font-size: 2rem;
   font-weight: 800;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #0066cc 0%, #00a3e0 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -133,7 +133,7 @@ section {
 }
 
 .footer-section a:hover {
-  color: #667eea;
+  color: #0066cc;
 }
 
 .footer-bottom {
@@ -148,7 +148,7 @@ section {
 
 .footer-team {
   margin-top: 0.5rem;
-  color: #667eea;
+  color: #0066cc;
   font-weight: 500;
 }
 

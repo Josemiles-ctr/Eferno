@@ -11,12 +11,38 @@
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) .navigation {
-    background: rgba(30, 30, 30, 0.95);
+    background: rgba(13, 17, 23, 0.95);
   }
 }
 
 :root[data-theme="dark"] .navigation {
-  background: rgba(30, 30, 30, 0.95);
+  background: rgba(13, 17, 23, 0.95);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .brand-icon,
+  :root:not([data-theme="light"]) .nav-brand {
+    color: #4a9eff;
+  }
+
+  :root:not([data-theme="light"]) .brand-name {
+    background: linear-gradient(135deg, #4a9eff 0%, #62b4ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
+
+:root[data-theme="dark"] .brand-icon,
+:root[data-theme="dark"] .nav-brand {
+  color: #4a9eff;
+}
+
+:root[data-theme="dark"] .brand-name {
+  background: linear-gradient(135deg, #4a9eff 0%, #62b4ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .nav-container {
@@ -33,16 +59,16 @@
   gap: 0.5rem;
   font-size: 1.5rem;
   font-weight: 700;
-  color: #667eea;
+  color: #1a1a2e;
 }
 
 .brand-icon {
   font-size: 2rem;
-  color: #667eea;
+  color: #1a1a2e;
 }
 
 .brand-name {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #0066cc 0%, #00a3e0 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -72,7 +98,7 @@
 }
 
 .theme-toggle:hover {
-  background: rgba(102, 126, 234, 0.1);
+  background: rgba(0, 102, 204, 0.1);
 }
 
 .theme-toggle .material-icons {
@@ -93,7 +119,7 @@
   display: block;
   width: 25px;
   height: 3px;
-  background: #667eea;
+  background: #0066cc;
   border-radius: 2px;
   transition: all 0.3s ease;
 }
@@ -133,12 +159,12 @@
   left: 0;
   width: 0;
   height: 2px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #0066cc 0%, #00a3e0 100%);
   transition: width 0.3s ease;
 }
 
 .nav-links a:hover {
-  color: #667eea;
+  color: #0066cc;
 }
 
 .nav-links a:hover::after {
@@ -187,11 +213,11 @@
 @media (prefers-color-scheme: dark) {
   @media (max-width: 768px) {
     :root:not([data-theme="light"]) .nav-links {
-      background: rgba(30, 30, 30, 0.98);
+      background: rgba(13, 17, 23, 0.98);
     }
   }
 }
 
 :root[data-theme="dark"] .nav-links {
-  background: rgba(30, 30, 30, 0.98);
+  background: rgba(13, 17, 23, 0.98);
 }

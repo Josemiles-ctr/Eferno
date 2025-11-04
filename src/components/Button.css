@@ -36,14 +36,14 @@
 
 /* Variants */
 .btn--primary {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #0066cc 0%, #00a3e0 100%);
   color: white;
-  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+  box-shadow: 0 4px 15px rgba(0, 102, 204, 0.4);
 }
 
 .btn--primary:hover:not(:disabled) {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
+  box-shadow: 0 6px 20px rgba(0, 102, 204, 0.5);
 }
 
 .btn--primary:active:not(:disabled) {
@@ -51,34 +51,34 @@
 }
 
 .btn--secondary {
-  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  background: linear-gradient(135deg, #0891b2 0%, #06b6d4 100%);
   color: white;
-  box-shadow: 0 4px 15px rgba(240, 147, 251, 0.4);
+  box-shadow: 0 4px 15px rgba(8, 145, 178, 0.4);
 }
 
 .btn--secondary:hover:not(:disabled) {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(240, 147, 251, 0.5);
+  box-shadow: 0 6px 20px rgba(8, 145, 178, 0.5);
 }
 
 .btn--outline {
   background: transparent;
-  border: 2px solid #667eea;
-  color: #667eea;
+  border: 2px solid #0066cc;
+  color: #0066cc;
 }
 
 .btn--outline:hover:not(:disabled) {
-  background: #667eea;
+  background: #0066cc;
   color: white;
 }
 
 .btn--ghost {
   background: transparent;
-  color: #667eea;
+  color: #0066cc;
 }
 
 .btn--ghost:hover:not(:disabled) {
-  background: rgba(102, 126, 234, 0.1);
+  background: rgba(0, 102, 204, 0.1);
 }
 
 .btn--full-width {
@@ -129,11 +129,11 @@
 /* Dark mode support */
 @media (prefers-color-scheme: dark) {
   .btn--outline {
-    border-color: #8b9aed;
-    color: #8b9aed;
+    border-color: #4da6ff;
+    color: #4da6ff;
   }
   
   .btn--ghost {
-    color: #8b9aed;
+    color: #4da6ff;
   }
 }

@@ -2,7 +2,7 @@
   position: sticky;
   top: 70px;
   z-index: 100;
-  background: rgba(15, 15, 30, 0.95);
+  background: rgba(13, 17, 23, 0.95);
   backdrop-filter: blur(10px);
   padding: 1rem 0;
   box-shadow: var(--shadow-sm, 0 4px 20px rgba(0, 0, 0, 0.3));
@@ -30,7 +30,7 @@
 
 .tab {
   background: transparent;
-  border: 2px solid rgba(102, 126, 234, 0.3);
+  border: 2px solid rgba(0, 102, 204, 0.3);
   color: var(--text-secondary, #b0b0b0);
   padding: 0.75rem 1.5rem;
   border-radius: 12px;
@@ -45,17 +45,17 @@
 }
 
 .tab:hover {
-  background: rgba(102, 126, 234, 0.1);
-  border-color: rgba(102, 126, 234, 0.6);
+  background: rgba(0, 102, 204, 0.1);
+  border-color: rgba(0, 102, 204, 0.6);
   color: var(--text-primary, #e0e0e0);
   transform: translateY(-2px);
 }
 
 .tab--active {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #0066cc 0%, #00a3e0 100%);
   border-color: transparent;
   color: white;
-  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+  box-shadow: 0 4px 15px rgba(0, 102, 204, 0.4);
 }
 
 .tab--active:hover {

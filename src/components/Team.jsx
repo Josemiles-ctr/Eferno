@@ -1,41 +1,45 @@
 import './Team.css';
+import aitaImg from '../assets/Team/aita.jpg';
+import otaiImg from '../assets/Team/otaijoseph.jpg';
+import namugerwaaImg from '../assets/Team/namugerwa.jpg';
+import mukisaImg from '../assets/Team/mukisa.jpg';
 
 const Team = () => {
   const teamMembers = [
     {
-      name: 'Mukisa Ben Ezra',
-      role: 'Lead Software Engineer',
-      icon: 'person',
+      name: 'Aita Joshua',
+      role: 'Technology & System Architecture Lead',
+      icon: 'architecture',
       degree: 'BSc. Software Engineering',
-      avatar: 'https://api.dicebear.com/7.x/micah/svg?seed=MukisaBenEzra&backgroundColor=667eea&baseColor=ac6651'
+      avatar: aitaImg
     },
     {
       name: 'Otai Joseph',
-      role: 'Full Stack Developer',
-      icon: 'code',
+      role: 'Design and User Experience Expert',
+      icon: 'palette',
       degree: 'BSc. Software Engineering',
-      avatar: 'https://api.dicebear.com/7.x/micah/svg?seed=OtaiJoseph&backgroundColor=764ba2&baseColor=f9c9b6'
-    },
-    {
-      name: 'Aita Joshua Prince',
-      role: 'Backend Engineer',
-      icon: 'dns',
-      degree: 'BSc. Software Engineering',
-      avatar: 'https://api.dicebear.com/7.x/micah/svg?seed=AitaJoshuaPrince&backgroundColor=667eea&baseColor=ac6651'
-    },
-    {
-      name: 'Wamani Joshua',
-      role: 'Frontend Developer',
-      icon: 'web',
-      degree: 'BSc. Software Engineering',
-      avatar: 'https://api.dicebear.com/7.x/micah/svg?seed=WamaniJoshua&backgroundColor=764ba2&baseColor=d08b5b'
+      avatar: otaiImg
     },
     {
       name: 'Namugerwa Precious',
-      role: 'UI/UX Engineer',
-      icon: 'palette',
+      role: 'HR and Marketing',
+      icon: 'people',
       degree: 'BSc. Software Engineering',
-      avatar: 'https://api.dicebear.com/7.x/micah/svg?seed=NamugerwaPrecious&backgroundColor=f093fb&baseColor=ffdbb4'
+      avatar: namugerwaaImg
+    },
+    {
+      name: 'Mukisa Ben Ezra',
+      role: 'Product Strategist',
+      icon: 'lightbulb',
+      degree: 'BSc. Software Engineering',
+      avatar: mukisaImg
+    },
+    {
+      name: 'Wamani Joshua',
+      role: 'Data and Insight Lead',
+      icon: 'analytics',
+      degree: 'BSc. Software Engineering',
+      avatar: 'https://api.dicebear.com/7.x/micah/svg?seed=WamaniJoshua&backgroundColor=0066cc&baseColor=d08b5b'
     }
   ];
 
@@ -56,7 +60,7 @@ const Team = () => {
                 <img 
                   src={member.avatar} 
                   alt={member.name}
-                  className="avatar-img"
+                  className={`avatar-img ${member.name === 'Namugerwa Precious' ? 'avatar-namugerwa' : ''}`}
                 />
               </div>
               <div className="team-info">

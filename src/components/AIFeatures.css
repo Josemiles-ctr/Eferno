@@ -28,11 +28,27 @@
 .ai-features .section-title {
   font-size: 2.5rem;
   font-weight: 800;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #0066cc 0%, #00a3e0 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   margin-bottom: 1rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .ai-features .section-title {
+    background: linear-gradient(135deg, #4a9eff 0%, #62b4ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
+
+:root[data-theme="dark"] .ai-features .section-title {
+  background: linear-gradient(135deg, #4a9eff 0%, #62b4ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .ai-features .section-description {
@@ -171,7 +187,7 @@
 }
 
 .carousel-button svg {
-  color: #667eea;
+  color: #0066cc;
 }
 
 .carousel-indicators {
@@ -198,7 +214,7 @@
 }
 
 .indicator--active {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #0066cc 0%, #00a3e0 100%);
   width: 32px;
   border-radius: 6px;
 }

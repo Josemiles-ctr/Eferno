@@ -11,37 +11,37 @@ const AIFeatures = () => {
       icon: 'smart_toy',
       title: 'AI-Powered Recommendations',
       description: 'Get personalized product suggestions based on your preferences, browsing history, and purchase patterns using advanced machine learning algorithms.',
-      gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)'
+      gradient: 'linear-gradient(135deg, #0066cc 0%, #0088cc 100%)'
     },
     {
       icon: 'search',
       title: 'Smart Search & Discovery',
       description: 'Find exactly what you need with our intelligent search that understands context, synonyms, and even visual queries to deliver perfect results.',
-      gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)'
+      gradient: 'linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%)'
     },
     {
       icon: 'chat',
       title: 'AI Shopping Assistant',
       description: 'Chat with our virtual assistant for instant product information, size recommendations, styling tips, and personalized shopping guidance 24/7.',
-      gradient: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)'
+      gradient: 'linear-gradient(135deg, #0891b2 0%, #06b6d4 100%)'
     },
     {
       icon: 'analytics',
       title: 'Price Prediction & Alerts',
       description: 'AI analyzes price trends to predict optimal buying times and sends smart alerts when your favorite items go on sale or restock.',
-      gradient: 'linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)'
+      gradient: 'linear-gradient(135deg, #059669 0%, #10b981 100%)'
     },
     {
       icon: 'checkroom',
       title: 'Virtual Try-On',
       description: 'Experience products before buying with AR-powered virtual try-on for clothes, accessories, and home decor items using your device camera.',
-      gradient: 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)'
+      gradient: 'linear-gradient(135deg, #1e40af 0%, #3b82f6 100%)'
     },
     {
       icon: 'straighten',
       title: 'Smart Size Finder',
       description: 'Never worry about sizing again! Our AI analyzes your measurements and past purchases to recommend the perfect fit every time.',
-      gradient: 'linear-gradient(135deg, #30cfd0 0%, #330867 100%)'
+      gradient: 'linear-gradient(135deg, #0d9488 0%, #14b8a6 100%)'
     }
   ];
 
