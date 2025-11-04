@@ -7,6 +7,13 @@ import mukisaImg from '../assets/Team/mukisa.jpg';
 const Team = () => {
   const teamMembers = [
     {
+      name: 'Mukisa Ben Ezra',
+      role: 'Product Strategist',
+      icon: 'lightbulb',
+      degree: 'BSc. Software Engineering',
+      avatar: mukisaImg
+    },
+    {
       name: 'Aita Joshua',
       role: 'Technology & System Architecture Lead',
       icon: 'architecture',
@@ -21,25 +28,18 @@ const Team = () => {
       avatar: otaiImg
     },
     {
-      name: 'Namugerwa Precious',
-      role: 'HR and Marketing',
-      icon: 'people',
-      degree: 'BSc. Software Engineering',
-      avatar: namugerwaaImg
-    },
-    {
-      name: 'Mukisa Ben Ezra',
-      role: 'Product Strategist',
-      icon: 'lightbulb',
-      degree: 'BSc. Software Engineering',
-      avatar: mukisaImg
-    },
-    {
       name: 'Wamani Joshua',
       role: 'Data and Insight Lead',
       icon: 'analytics',
       degree: 'BSc. Software Engineering',
       avatar: 'https://api.dicebear.com/7.x/micah/svg?seed=WamaniJoshua&backgroundColor=0066cc&baseColor=d08b5b'
+    },
+    {
+      name: 'Namugerwa Precious',
+      role: 'HR and Marketing',
+      icon: 'people',
+      degree: 'BSc. Software Engineering',
+      avatar: namugerwaaImg
     }
   ];
 
