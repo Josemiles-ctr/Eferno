@@ -60,7 +60,7 @@ section {
   font-size: 2.75rem;
   font-weight: 800;
   margin-bottom: 1rem;
-  background: linear-gradient(135deg, #0066cc 0%, #00a3e0 100%);
+  background: linear-gradient(135deg, #ff8c00 0%, #ffa726 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -111,7 +111,7 @@ section {
 .footer-logo {
   font-size: 2rem;
   font-weight: 800;
-  background: linear-gradient(135deg, #0066cc 0%, #00a3e0 100%);
+  background: linear-gradient(135deg, #ff8c00 0%, #ffa726 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -147,7 +147,7 @@ section {
 }
 
 .footer-section a:hover {
-  color: #0066cc;
+  color: #ff8c00;
 }
 
 .footer-bottom {
@@ -162,7 +162,7 @@ section {
 
 .footer-team {
   margin-top: 0.5rem;
-  color: #0066cc;
+  color: #ff8c00;
   font-weight: 500;
 }
 

@@ -22,11 +22,11 @@
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) .brand-icon,
   :root:not([data-theme="light"]) .nav-brand {
-    color: #4a9eff;
+    color: #ffb74d;
   }
 
   :root:not([data-theme="light"]) .brand-name {
-    background: linear-gradient(135deg, #4a9eff 0%, #62b4ff 100%);
+    background: linear-gradient(135deg, #ffb74d 0%, #ffcc80 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -35,11 +35,11 @@
 
 :root[data-theme="dark"] .brand-icon,
 :root[data-theme="dark"] .nav-brand {
-  color: #4a9eff;
+  color: #ffb74d;
 }
 
 :root[data-theme="dark"] .brand-name {
-  background: linear-gradient(135deg, #4a9eff 0%, #62b4ff 100%);
+  background: linear-gradient(135deg, #ffb74d 0%, #ffcc80 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -74,7 +74,7 @@
 }
 
 .brand-name {
-  background: linear-gradient(135deg, #0066cc 0%, #00a3e0 100%);
+  background: linear-gradient(135deg, #ff8c00 0%, #ffa726 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -104,7 +104,7 @@
 }
 
 .theme-toggle:hover {
-  background: rgba(0, 102, 204, 0.1);
+  background: rgba(255, 140, 0, 0.1);
 }
 
 .theme-toggle .material-icons {
@@ -125,7 +125,7 @@
   display: block;
   width: 25px;
   height: 3px;
-  background: #0066cc;
+  background: #ff8c00;
   border-radius: 2px;
   transition: all 0.3s ease;
 }
@@ -167,8 +167,8 @@
 }
 
 .nav-links a:hover {
-  color: #0066cc;
-  background: rgba(0, 102, 204, 0.1);
+  color: #ff8c00;
+  background: rgba(255, 140, 0, 0.1);
 }
 
 /* Mobile Styles */

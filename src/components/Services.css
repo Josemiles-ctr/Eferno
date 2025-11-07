@@ -27,7 +27,7 @@
   font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 800;
   margin-bottom: 1rem;
-  background: linear-gradient(135deg, #0066cc 0%, #00a3e0 100%);
+  background: linear-gradient(135deg, #ff8c00 0%, #ffa726 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -59,8 +59,8 @@
 
 .service-card:hover {
   transform: translateY(-8px);
-  box-shadow: var(--shadow-lg, 0 12px 40px rgba(0, 102, 204, 0.2));
-  border-color: #0066cc;
+  box-shadow: var(--shadow-lg, 0 12px 40px rgba(255, 140, 0, 0.2));
+  border-color: #ff8c00;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -75,14 +75,14 @@
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) .service-icon {
-    background: linear-gradient(135deg, #4a9eff 0%, #62b4ff 100%);
+    background: linear-gradient(135deg, #ffb74d 0%, #ffcc80 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
 
   :root:not([data-theme="light"]) .section-title {
-    background: linear-gradient(135deg, #4a9eff 0%, #62b4ff 100%);
+    background: linear-gradient(135deg, #ffb74d 0%, #ffcc80 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -90,14 +90,14 @@
 }
 
 :root[data-theme="dark"] .service-icon {
-  background: linear-gradient(135deg, #4a9eff 0%, #62b4ff 100%);
+  background: linear-gradient(135deg, #ffb74d 0%, #ffcc80 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 :root[data-theme="dark"] .section-title {
-  background: linear-gradient(135deg, #4a9eff 0%, #62b4ff 100%);
+  background: linear-gradient(135deg, #ffb74d 0%, #ffcc80 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -109,7 +109,7 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  background: linear-gradient(135deg, #0066cc 0%, #00a3e0 100%);
+  background: linear-gradient(135deg, #ff8c00 0%, #ffa726 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

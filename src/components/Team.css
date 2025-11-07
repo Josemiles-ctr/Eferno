@@ -76,8 +76,8 @@
 
 .team-card:hover {
   transform: translateY(-10px);
-  box-shadow: var(--shadow-lg, 0 15px 50px rgba(0, 102, 204, 0.25));
-  border-color: #0066cc;
+  box-shadow: var(--shadow-lg, 0 15px 50px rgba(255, 140, 0, 0.25));
+  border-color: #ff8c00;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -86,7 +86,7 @@
   }
 
   :root:not([data-theme="light"]) .team-card:hover {
-    border-color: #4a9eff;
+    border-color: #ffb74d;
   }
 }
 
@@ -95,7 +95,7 @@
 }
 
 :root[data-theme="dark"] .team-card:hover {
-  border-color: #4a9eff;
+  border-color: #ffb74d;
 }
 
 .team-image {
@@ -108,7 +108,7 @@
   top: -10px;
   right: 50%;
   transform: translateX(50%);
-  background: linear-gradient(135deg, #0066cc 0%, #00a3e0 100%);
+  background: linear-gradient(135deg, #ff8c00 0%, #ffa726 100%);
   color: white;
   padding: 0.4rem 1rem;
   border-radius: 20px;
@@ -116,18 +116,18 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  box-shadow: 0 4px 15px rgba(0, 102, 204, 0.3);
+  box-shadow: 0 4px 15px rgba(255, 140, 0, 0.3);
   z-index: 10;
 }
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) .team-badge {
-    background: linear-gradient(135deg, #4a9eff 0%, #62b4ff 100%);
+    background: linear-gradient(135deg, #ffb74d 0%, #ffcc80 100%);
   }
 }
 
 :root[data-theme="dark"] .team-badge {
-  background: linear-gradient(135deg, #4a9eff 0%, #62b4ff 100%);
+  background: linear-gradient(135deg, #ffb74d 0%, #ffcc80 100%);
 }
 
 .avatar-img {
@@ -137,8 +137,8 @@
   object-fit: cover;
   display: block;
   margin: 0 auto;
-  border: 3px solid #0066cc;
-  box-shadow: 0 10px 30px rgba(0, 102, 204, 0.3);
+  border: 3px solid #ff8c00;
+  box-shadow: 0 10px 30px rgba(255, 140, 0, 0.3);
   transition: all 0.3s ease;
   background: white;
 }
@@ -156,8 +156,8 @@
 
 .team-card:hover .avatar-img {
   transform: scale(1.1);
-  border-color: #00a3e0;
-  box-shadow: 0 15px 40px rgba(0, 102, 204, 0.4);
+  border-color: #ffa726;
+  box-shadow: 0 15px 40px rgba(255, 140, 0, 0.4);
 }
 
 .team-info {
@@ -174,7 +174,7 @@
 .team-role {
   font-size: 1.125rem;
   font-weight: 600;
-  color: #0066cc;
+  color: #ff8c00;
   margin-bottom: 0.5rem;
 }
 

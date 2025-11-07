@@ -28,7 +28,7 @@
 .ai-features .section-title {
   font-size: 2.5rem;
   font-weight: 800;
-  background: linear-gradient(135deg, #0066cc 0%, #00a3e0 100%);
+  background: linear-gradient(135deg, #ff8c00 0%, #ffa726 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -37,7 +37,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) .ai-features .section-title {
-    background: linear-gradient(135deg, #4a9eff 0%, #62b4ff 100%);
+    background: linear-gradient(135deg, #ffb74d 0%, #ffcc80 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -45,7 +45,7 @@
 }
 
 :root[data-theme="dark"] .ai-features .section-title {
-  background: linear-gradient(135deg, #4a9eff 0%, #62b4ff 100%);
+  background: linear-gradient(135deg, #ffb74d 0%, #ffcc80 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -187,7 +187,7 @@
 }
 
 .carousel-button svg {
-  color: #0066cc;
+  color: #ff8c00;
 }
 
 .carousel-indicators {
@@ -214,7 +214,7 @@
 }
 
 .indicator--active {
-  background: linear-gradient(135deg, #0066cc 0%, #00a3e0 100%);
+  background: linear-gradient(135deg, #ff8c00 0%, #ffa726 100%);
   width: 32px;
   border-radius: 6px;
 }

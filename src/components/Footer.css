@@ -2,7 +2,7 @@
   background: var(--bg-secondary, #f5f7fa);
   padding: 4rem 1.5rem 2rem;
   margin-top: 6rem;
-  border-top: 1px solid rgba(0, 102, 204, 0.2);
+  border-top: 1px solid rgba(255, 140, 0, 0.2);
   position: relative;
   z-index: 2;
   overflow-x: hidden;
@@ -15,7 +15,7 @@
   }
 
   :root:not([data-theme="dark"]) .footer-brand {
-    color: #0066cc;
+    color: #ff8c00;
   }
 
   :root:not([data-theme="dark"]) .qr-title {
@@ -29,14 +29,14 @@
   }
 
   :root:not([data-theme="light"]) .footer-title {
-    background: linear-gradient(135deg, #4a9eff 0%, #62b4ff 100%);
+    background: linear-gradient(135deg, #ffb74d 0%, #ffcc80 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
 
   :root:not([data-theme="light"]) .footer-brand {
-    color: #4a9eff;
+    color: #ffb74d;
   }
 
   :root:not([data-theme="light"]) .qr-title {
@@ -49,7 +49,7 @@
 }
 
 :root[data-theme="light"] .footer-brand {
-  color: #0066cc;
+  color: #ff8c00;
 }
 
 :root[data-theme="light"] .qr-title {
@@ -61,14 +61,14 @@
 }
 
 :root[data-theme="dark"] .footer-title {
-  background: linear-gradient(135deg, #4a9eff 0%, #62b4ff 100%);
+  background: linear-gradient(135deg, #ffb74d 0%, #ffcc80 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 :root[data-theme="dark"] .footer-brand {
-  color: #4a9eff;
+  color: #ffb74d;
 }
 
 :root[data-theme="dark"] .qr-title {
@@ -101,7 +101,7 @@
   font-weight: 700;
   color: var(--text-primary, #e0e0e0);
   margin-bottom: 1rem;
-  background: linear-gradient(135deg, #0066cc 0%, #00a3e0 100%);
+  background: linear-gradient(135deg, #ff8c00 0%, #ffa726 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -231,12 +231,12 @@
 }
 
 .footer-links a:hover {
-  color: #0066cc;
+  color: #ff8c00;
 }
 
 /* Bottom Bar */
 .footer-bottom {
-  border-top: 1px solid rgba(0, 102, 204, 0.1);
+  border-top: 1px solid rgba(255, 140, 0, 0.1);
   padding-top: 2rem;
   display: flex;
   justify-content: space-between;

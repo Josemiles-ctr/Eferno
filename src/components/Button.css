@@ -36,14 +36,14 @@
 
 /* Variants */
 .btn--primary {
-  background: linear-gradient(135deg, #0066cc 0%, #00a3e0 100%);
+  background: linear-gradient(135deg, #ff8c00 0%, #ffa726 100%);
   color: white;
-  box-shadow: 0 4px 15px rgba(0, 102, 204, 0.4);
+  box-shadow: 0 4px 15px rgba(255, 140, 0, 0.4);
 }
 
 .btn--primary:hover:not(:disabled) {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(0, 102, 204, 0.5);
+  box-shadow: 0 6px 20px rgba(255, 140, 0, 0.5);
 }
 
 .btn--primary:active:not(:disabled) {
@@ -63,22 +63,22 @@
 
 .btn--outline {
   background: transparent;
-  border: 2px solid #0066cc;
-  color: #0066cc;
+  border: 2px solid #ff8c00;
+  color: #ff8c00;
 }
 
 .btn--outline:hover:not(:disabled) {
-  background: #0066cc;
+  background: #ff8c00;
   color: white;
 }
 
 .btn--ghost {
   background: transparent;
-  color: #0066cc;
+  color: #ff8c00;
 }
 
 .btn--ghost:hover:not(:disabled) {
-  background: rgba(0, 102, 204, 0.1);
+  background: rgba(255, 140, 0, 0.1);
 }
 
 .btn--full-width {
@@ -129,11 +129,11 @@
 /* Dark mode support */
 @media (prefers-color-scheme: dark) {
   .btn--outline {
-    border-color: #4da6ff;
-    color: #4da6ff;
+    border-color: #ffb74d;
+    color: #ffb74d;
   }
   
   .btn--ghost {
-    color: #4da6ff;
+    color: #ffb74d;
   }
 }

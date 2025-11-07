@@ -14,14 +14,14 @@
   }
 
   :root:not([data-theme="light"]) .gradient-text {
-    background: linear-gradient(135deg, #4a9eff 0%, #62b4ff 100%);
+    background: linear-gradient(135deg, #ffb74d 0%, #ffcc80 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
 
   :root:not([data-theme="light"]) .hero-subtitle {
-    color: #4a9eff;
+    color: #ffb74d;
   }
 }
 
@@ -30,14 +30,14 @@
 }
 
 :root[data-theme="dark"] .gradient-text {
-  background: linear-gradient(135deg, #4a9eff 0%, #62b4ff 100%);
+  background: linear-gradient(135deg, #ffb74d 0%, #ffcc80 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 :root[data-theme="dark"] .hero-subtitle {
-  color: #4a9eff;
+  color: #ffb74d;
 }
 
 .hero::before {
@@ -47,7 +47,7 @@
   right: -50%;
   width: 100%;
   height: 100%;
-  background: radial-gradient(circle, rgba(0, 102, 204, 0.1) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(255, 140, 0, 0.1) 0%, transparent 70%);
   animation: pulse 15s ease-in-out infinite;
 }
 
@@ -91,7 +91,7 @@
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, #0066cc 0%, #00a3e0 100%);
+  background: linear-gradient(135deg, #ff8c00 0%, #ffa726 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -100,7 +100,7 @@
 .hero-subtitle {
   font-size: clamp(1.25rem, 3vw, 1.75rem);
   font-weight: 600;
-  color: #0066cc;
+  color: #ff8c00;
   margin-bottom: 1.5rem;
 }
 
@@ -158,7 +158,7 @@
   }
 
   :root:not([data-theme="light"]) .floating-card .card-icon {
-    background: linear-gradient(135deg, #4a9eff 0%, #62b4ff 100%);
+    background: linear-gradient(135deg, #ffb74d 0%, #ffcc80 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -170,7 +170,7 @@
 }
 
 :root[data-theme="dark"] .floating-card .card-icon {
-  background: linear-gradient(135deg, #4a9eff 0%, #62b4ff 100%);
+  background: linear-gradient(135deg, #ffb74d 0%, #ffcc80 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -178,7 +178,7 @@
 
 .floating-card .card-icon {
   font-size: 2.5rem;
-  background: linear-gradient(135deg, #0066cc 0%, #00a3e0 100%);
+  background: linear-gradient(135deg, #ff8c00 0%, #ffa726 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
