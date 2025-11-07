@@ -19,7 +19,9 @@ const Hero = () => {
           </p>
           <div className="hero-buttons">
             <Button variant="primary" size="large">Get Started</Button>
-            <Button variant="outline" size="large">Learn More</Button>
+            <a href="https://eferno-nine.vercel.app/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
+              <Button variant="outline" size="large">Demonstration</Button>
+            </a>
           </div>
         </div>
         <div className="hero-visual">

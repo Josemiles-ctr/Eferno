@@ -59,8 +59,7 @@ const Navigation = ({ onNavigate }) => {
     <nav className="navigation">
       <div className="nav-container">
         <div className="nav-brand">
-          <span className="material-icons brand-icon">local_fire_department</span>
-          <span className="brand-name">Eferno</span>
+          <img src="/efernowithname.png" alt="Eferno" className="brand-logo" />
         </div>
 
         <div className="nav-right">

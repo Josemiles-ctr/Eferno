@@ -71,10 +71,9 @@ const Footer = () => {
 
           {/* Company Info */}
           <div className="footer-section company-info">
-            <h4 className="footer-brand">
-              <span className="material-icons">local_fire_department</span>
-              Eferno
-            </h4>
+            <div className="footer-brand">
+              <img src="/efernowithname.png" alt="Eferno" className="footer-logo" />
+            </div>
             <p className="company-tagline">AI-Powered Shopping Platform</p>
             <div className="footer-links">
               <a href="#about">About</a>

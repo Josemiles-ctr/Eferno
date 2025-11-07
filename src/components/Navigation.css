@@ -62,6 +62,12 @@
   color: #1a1a2e;
 }
 
+.brand-logo {
+  height: 45px;
+  width: auto;
+  display: block;
+}
+
 .brand-icon {
   font-size: 2rem;
   color: #1a1a2e;

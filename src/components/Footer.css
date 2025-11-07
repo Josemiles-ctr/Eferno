@@ -197,11 +197,14 @@
 .footer-brand {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--text-primary, #1a1a1a);
+  justify-content: center;
   margin-bottom: 0.5rem;
+}
+
+.footer-logo {
+  height: 40px;
+  width: auto;
+  display: block;
 }
 
 .footer-brand .material-icons {
